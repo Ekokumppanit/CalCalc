@@ -1,0 +1,144 @@
+@import "dynamicgif.less";
+@import "elements.less";
+
+.gradient (@origin: left, @start: #ffffff, @stop: #000000) {
+    background-color: @start;
+    background-image: -webkit-linear-gradient(@origin, @start, @stop);
+    background-image: -moz-linear-gradient(@origin, @start, @stop);
+    background-image: -o-linear-gradient(@origin, @start, @stop);
+    background-image: -ms-linear-gradient(@origin, @start, @stop);
+    background-image: linear-gradient(@origin, @start, @stop);
+}
+
+@input_padding: 2%;
+@input_width: 85.85%;
+@addon_width: 9.85%;
+
+@large_input_width: 60.85%;
+@large_addon_width: 34.85%;
+
+@result_input_width: 35%;
+@result_addon_width: 20%;
+
+.calculator {
+	input {
+		width: @input_width;
+		padding-left: @input_padding;
+		padding-right: @input_padding;
+	}
+
+	.add-on {
+		width: @addon_width;
+		padding-left: 0;
+		padding-right: 0;
+	}
+
+	.input-append.large {
+		input {
+			font-size: 48px;
+			line-height: 55px;
+			height: 55px;
+			text-align: right;
+			width: @large_input_width;
+		}
+		.add-on {
+			height: 55px;
+			font-size: 48px;
+			line-height: 55px;
+			width: @large_addon_width;
+		}
+	}
+
+	.result {
+		text-align: center;
+		font-size: 48px;
+		line-height: 64px;
+		margin-bottom: 0.5em;
+	}
+
+	ul.sources {
+		margin-top: -0.7em;
+	}
+
+	legend {
+		span {
+			font-size: 14px;
+			line-height: 20px;
+		}
+	}
+
+	span.help {
+		color: #3D5DA8;
+	}
+
+	.tooltip {
+		font-size: 14px;
+	}
+
+	.from-route {
+		color: #888;
+	}
+
+	.btn-large {
+		padding: 4px 19px;
+		line-height: 55px;
+		font-size: 24px;
+	}
+
+	.btn-group {
+		& > .btn + .btn {
+			margin-left: 0;
+			border-left: 0;
+		}
+		[class*="span"] { float: left; }
+		.span6 { width: 49.9998%; }
+		.span4 { width: 33.332%; }
+	}
+
+	.speed-btn {
+		height: 55px;
+		line-height: 27px;
+		text-align: left;
+		display: block;
+		span.activity {
+			display: block;
+			font-size: 15px;
+		}
+		span.description {
+			display: block;
+			font-size: 13px;
+		}
+		.caret {
+			margin-top: -27px;
+			float: right;
+		}
+	}
+
+	.dropdown-menu {
+		li.active a {
+			color: #fff;
+		}
+	}
+
+	.message {
+		display: block;
+		margin-bottom: 6px;
+		background: #DD4F4F;
+		color: #fff;
+		font-size: 12px;
+		padding: 1px 12px;
+		position: absolute;
+		.rounded(3px);
+		&::after {
+			position: absolute;
+			top: -6px;
+			left: 10px;
+			display: inline-block;
+			border-right: 6px solid transparent;
+			border-bottom: 6px solid #DD4F4F;
+			border-left: 6px solid transparent;
+			content: '';
+		}
+		&.hide { display: none; }
+	}
+}

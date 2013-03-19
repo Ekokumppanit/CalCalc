@@ -1,0 +1,4 @@
+*.sublime-workspace
+*.css
+temp
+build
