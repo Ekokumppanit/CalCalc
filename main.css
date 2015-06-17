@@ -1,0 +1,124 @@
+/*---------------------------------------------------
+    LESS Elements 0.6
+  ---------------------------------------------------
+    A set of useful LESS mixins by Dmitry Fadeyev
+    Special thanks for mixin suggestions to:
+      Kris Van Herzeele,
+      Benoit Adam,
+      Portenart Emile-Victor,
+      Ryan Faerman
+
+    More info at: http://lesselements.com
+-----------------------------------------------------*/
+.calculator input {
+  width: 85.85%;
+  padding-left: 2%;
+  padding-right: 2%;
+}
+.calculator .add-on {
+  width: 9.85%;
+  padding-left: 0;
+  padding-right: 0;
+}
+.calculator .input-append.large input {
+  font-size: 48px;
+  line-height: 55px;
+  height: 55px;
+  text-align: right;
+  width: 60.85%;
+}
+.calculator .input-append.large .add-on {
+  height: 55px;
+  font-size: 48px;
+  line-height: 55px;
+  width: 34.85%;
+}
+.calculator .result {
+  text-align: center;
+  font-size: 48px;
+  line-height: 64px;
+  margin-bottom: 0.5em;
+}
+.calculator ul.sources {
+  margin-top: -0.7em;
+}
+.calculator legend span {
+  font-size: 14px;
+  line-height: 20px;
+}
+.calculator span.help {
+  color: #3D5DA8;
+}
+.calculator .tooltip {
+  font-size: 14px;
+}
+.calculator .from-route {
+  color: #888;
+}
+.calculator .btn-large {
+  padding: 4px 19px;
+  line-height: 55px;
+  font-size: 24px;
+}
+.calculator .btn-group > .btn + .btn {
+  margin-left: 0;
+  border-left: 0;
+}
+.calculator .btn-group [class*="span"] {
+  float: left;
+}
+.calculator .btn-group .span6 {
+  width: 49.9998%;
+}
+.calculator .btn-group .span4 {
+  width: 33.332%;
+}
+.calculator .speed-btn {
+  height: 55px;
+  line-height: 27px;
+  text-align: left;
+  display: block;
+}
+.calculator .speed-btn span.activity {
+  display: block;
+  font-size: 15px;
+}
+.calculator .speed-btn span.description {
+  display: block;
+  font-size: 13px;
+}
+.calculator .speed-btn .caret {
+  margin-top: -27px;
+  float: right;
+}
+.calculator .dropdown-menu li.active a {
+  color: #fff;
+}
+.calculator .message {
+  display: block;
+  margin-bottom: 6px;
+  background: #DD4F4F;
+  color: #fff;
+  font-size: 12px;
+  padding: 1px 12px;
+  position: absolute;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+}
+.calculator .message::after {
+  position: absolute;
+  top: -6px;
+  left: 10px;
+  display: inline-block;
+  border-right: 6px solid transparent;
+  border-bottom: 6px solid #DD4F4F;
+  border-left: 6px solid transparent;
+  content: '';
+}
+.calculator .message.hide {
+  display: none;
+}
